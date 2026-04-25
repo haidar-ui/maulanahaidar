@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Maulana Haidar Ma'shuum</title>
+    <!-- Menggunakan Tailwind CSS untuk styling yang cepat dan responsif -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f1f5f9; /* slate-100 */
+        }
+        /* Styling khusus saat halaman dicetak (Ctrl+P / Cmd+P) */
+        @media print {
+            body {
+                background-color: white;
+            }
+            .no-print {
+                display: none !important;
+            }
+            .print-container {
+                box-shadow: none !important;
+                max-width: 100% !important;
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+            .page-break {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body class="text-slate-800 antialiased py-10 md:py-16">
+
+    <!-- Tombol Print (Sembunyi saat dicetak) -->
+    <div class="fixed top-4 right-4 z-50 no-print">
+        <button onclick="window.print()" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg shadow-lg transition duration-300 flex items-center gap-2 text-sm font-semibold">
+            <i class="fas fa-print"></i> Cetak / Simpan PDF
+        </button>
+    </div>
+
+    <!-- Container Utama -->
+    <div class="max-w-5xl mx-auto bg-white print-container shadow-xl sm:rounded-2xl overflow-hidden">
+        
+        <!-- Header Profil -->
+        <header class="bg-slate-900 text-white px-8 py-10 md:px-16 md:py-14">
+            <div class="max-w-3xl">
+                <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-2">Maulana Haidar Ma'shuum</h1>
+                <h2 class="text-xl md:text-2xl text-blue-400 font-medium mb-6">Subject Excellence Mathematics & Edu-Tech Professional</h2>
+                
+                <div class="flex flex-col sm:flex-row gap-4 sm:gap-8 text-slate-300 text-sm md:text-base">
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-map-marker-alt text-blue-400"></i>
+                        <span>Tangerang Selatan, Indonesia</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-phone-alt text-blue-400"></i>
+                        <a href="tel:+6281398175621" class="hover:text-white transition">+62 813 9817 5621</a>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-envelope text-blue-400"></i>
+                        <a href="mailto:h.mashuum@gmail.com" class="hover:text-white transition">h.mashuum@gmail.com</a>
+                    </div>
+                </div>
+                <div class="mt-3 flex items-center gap-2 text-slate-300 text-sm md:text-base">
+                    <i class="fab fa-linkedin text-blue-400"></i>
+                    <a href="https://linkedin.com/in/maulana-haidar-ma'shuum-a8b64a190" target="_blank" class="hover:text-white transition break-all">
+                        linkedin.com/in/maulana-haidar-ma'shuum-a8b64a190
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Layout Konten -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-8 py-10 md:px-16 md:py-12">
+            
+            <!-- Kolom Kiri (Main Content - Pengalaman) -->
+            <div class="md:col-span-2 space-y-10">
+                
+                <!-- Section Kualifikasi / Ringkasan -->
+                <section>
+                    <h3 class="text-2xl font-bold text-slate-900 border-b-2 border-blue-100 pb-2 mb-4 flex items-center gap-2">
+                        <i class="fas fa-user-tie text-blue-600"></i> Profil & Kualifikasi
+                    </h3>
+                    <ul class="list-disc list-inside space-y-2 text-slate-600 leading-relaxed text-justify">
+                        <li><strong>6 tahun berkarier</strong> di bidang pendidikan berbasis teknologi (edu-tech) dengan penempatan di Jakarta.</li>
+                        <li>Pemahaman mendalam terkait subjek matematika <strong>Kurikulum Nasional Plus, Kurikulum Merdeka, dan Kurikulum Revisi 2013 (K13)</strong>.</li>
+                        <li>Menguasai <strong>Singaporean Mathematics</strong> (termasuk pendekatan <em>Concrete-Pictorial-Abstract</em>), serta memiliki pemahaman baik pada kurikulum <strong>IB dan Cambridge</strong>.</li>
+                        <li>Mampu berpikir secara kritis, analitis, dan sistematis dalam merancang kurikulum dan asesmen.</li>
+                        <li>Mampu bekerja sama dalam tim lintas fungsi (besar maupun kecil).</li>
+                        <li>Memanfaatkan riset dan teknologi (termasuk AI) secara strategis untuk memberikan hasil pembelajaran yang lebih optimal.</li>
+                    </ul>
+                </section>
+
+                <!-- Section Pengalaman Kerja -->
+                <section>
+                    <h3 class="text-2xl font-bold text-slate-900 border-b-2 border-blue-100 pb-2 mb-6 flex items-center gap-2">
+                        <i class="fas fa-briefcase text-blue-600"></i> Pengalaman Profesional
+                    </h3>
+
+                    <div class="space-y-8">
+                        <!-- Ruangguru: Subject Excellence -->
+                        <div class="page-break relative pl-6 border-l-2 border-blue-200">
+                            <div class="absolute w-3 h-3 bg-blue-500 rounded-full -left-[7px] top-1.5"></div>
+                            <h4 class="text-lg font-bold text-slate-800">Subject Excellence Mathematics <span class="text-base font-normal text-slate-500">(K-12 Academics)</span></h4>
+                            <div class="text-blue-600 font-medium mb-2">RUANGGURU | <span class="text-slate-500 text-sm">2023 - Sekarang</span></div>
+                            <ul class="list-disc list-inside space-y-1.5 text-slate-600 text-sm leading-relaxed">
+                                <li>Menyusun sumber ajar matematika untuk berbagai tingkatan guna mendukung aktivitas mengajar guru-guru Brain Academy.</li>
+                                <li>Membantu mengembangkan evaluasi guru yang komprehensif untuk Brain Academy Online dan Center.</li>
+                                <li>Melakukan dan membuat platform pembinaan secara periodik untuk memastikan kualitas pengajaran guru terjaga.</li>
+                                <li>Menyediakan tryout berkualitas tinggi bagi siswa dan guru secara rutin.</li>
+                                <li>Menjaga kualitas asesmen melalui <em>error analysis</em> dan <em>quality control</em> berkelanjutan untuk semua produk matematika K-12 Ruangguru.</li>
+                                <li>Mendukung tim analitik akademik terkait kepuasan konsumen Brain Academy Center melalui wawancara pengguna tahunan.</li>
+                                <li>Berperan dalam pengembangan konten <em>Math Champs</em>, produk untuk meningkatkan keterampilan matematika siswa.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Ruangguru: Master Teacher -->
+                        <div class="page-break relative pl-6 border-l-2 border-blue-200">
+                            <div class="absolute w-3 h-3 bg-blue-300 rounded-full -left-[7px] top-1.5"></div>
+                            <h4 class="text-lg font-bold text-slate-800">Master Teacher Mathematics for Brain Academy Online</h4>
+                            <div class="text-blue-600 font-medium mb-2">RUANGGURU | <span class="text-slate-500 text-sm">2022 - 2023</span></div>
+                            <ul class="list-disc list-inside space-y-1.5 text-slate-600 text-sm leading-relaxed">
+                                <li>Melakukan sesi pengajaran jarak jauh (kelas 3 SD hingga persiapan masuk universitas).</li>
+                                <li>Menyusun sumber belajar matematika untuk berbagai tingkatan.</li>
+                                <li>Membuat salindia (slide) instruksi pembelajaran yang menarik (menggunakan MS PowerPoint) untuk membangun interaksi kelas.</li>
+                                <li>Memberikan sesi pembelajaran rutin bagi siswa di seluruh Indonesia.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Ruangguru: Master Teacher Assessment -->
+                        <div class="page-break relative pl-6 border-l-2 border-blue-200">
+                            <div class="absolute w-3 h-3 bg-blue-300 rounded-full -left-[7px] top-1.5"></div>
+                            <h4 class="text-lg font-bold text-slate-800">Master Teacher Assessment Mathematics <span class="text-base font-normal text-slate-500">(K-12 Assessment)</span></h4>
+                            <div class="text-blue-600 font-medium mb-2">RUANGGURU | <span class="text-slate-500 text-sm">2020 - 2022</span></div>
+                            <ul class="list-disc list-inside space-y-1.5 text-slate-600 text-sm leading-relaxed">
+                                <li>Mengembangkan asesmen/evaluasi yang tepat dari kelas 3 hingga kelas 12.</li>
+                                <li>Memberikan soal-soal tryout berkualitas tinggi secara rutin, beserta video penjelasan solusinya.</li>
+                                <li>Menyediakan asesmen bagi individu untuk persiapan seleksi CPNS.</li>
+                                <li>Bekerja sama dengan sekolah mitra untuk menyelenggarakan tryout dan sesi pengajaran jarak jauh, khususnya fokus pada UTBK-SNBT.</li>
+                                <li>Memberikan pelatihan daring (coaching) bagi sekolah mitra untuk memperkaya wawasan guru mengenai UTBK-SNBT.</li>
+                            </ul>
+                        </div>
+
+                        <!-- BTA -->
+                        <div class="page-break relative pl-6 border-l-2 border-blue-200">
+                            <div class="absolute w-3 h-3 bg-slate-300 rounded-full -left-[7px] top-1.5"></div>
+                            <h4 class="text-lg font-bold text-slate-800">Guru Matematika <span class="text-base font-normal text-slate-500">(Paruh Waktu)</span></h4>
+                            <div class="text-blue-600 font-medium mb-2">BTA | <span class="text-slate-500 text-sm">2019 - 2020</span></div>
+                            <ul class="list-disc list-inside space-y-1.5 text-slate-600 text-sm leading-relaxed">
+                                <li>Menjadi pengajar matematika paruh waktu dengan alokasi sesuai permintaan (on-demand).</li>
+                            </ul>
+                        </div>
+
+                        <!-- Kumon -->
+                        <div class="page-break relative pl-6 border-l-2 border-transparent"> <!-- Transparent border for the last item to end the line -->
+                            <div class="absolute w-3 h-3 bg-slate-300 rounded-full -left-[7px] top-1.5"></div>
+                            <h4 class="text-lg font-bold text-slate-800">Tutor Matematika <span class="text-base font-normal text-slate-500">(Paruh Waktu)</span></h4>
+                            <div class="text-blue-600 font-medium mb-2">KUMON PERMATA DEPOK | <span class="text-slate-500 text-sm">2018</span></div>
+                            <ul class="list-disc list-inside space-y-1.5 text-slate-600 text-sm leading-relaxed">
+                                <li>Menilai pekerjaan rumah siswa dan tugas harian di tempat.</li>
+                                <li>Berinteraksi dengan siswa terkait kendala belajar dan memandu mereka menyelesaikannya secara mandiri dengan pendekatan persuasif.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Kolom Kanan (Sidebar - Pendidikan & Skill) -->
+            <div class="space-y-10">
+                
+                <!-- Pendidikan -->
+                <section class="page-break">
+                    <h3 class="text-xl font-bold text-slate-900 border-b-2 border-blue-100 pb-2 mb-4 flex items-center gap-2">
+                        <i class="fas fa-graduation-cap text-blue-600"></i> Pendidikan
+                    </h3>
+                    <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
+                        <h4 class="font-bold text-slate-800">Universitas Indonesia</h4>
+                        <div class="text-sm text-slate-500 mb-1">Depok | 2014 - 2019</div>
+                        <div class="font-medium text-blue-600">Sarjana Matematika (S.Si)</div>
+                        <div class="text-sm text-slate-600 mt-2 flex items-center gap-2">
+                            <i class="fas fa-award text-yellow-500"></i> IPK: 3.13 / 4.00
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Keterampilan Domain -->
+                <section class="page-break">
+                    <h3 class="text-xl font-bold text-slate-900 border-b-2 border-blue-100 pb-2 mb-4 flex items-center gap-2">
+                        <i class="fas fa-brain text-blue-600"></i> Domain Keahlian
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-blue-50 text-blue-700 text-sm rounded-full font-medium border border-blue-100">Matematika K-12</span>
+                        <span class="px-3 py-1 bg-blue-50 text-blue-700 text-sm rounded-full font-medium border border-blue-100">Singapore Math (CPA)</span>
+                        <span class="px-3 py-1 bg-blue-50 text-blue-700 text-sm rounded-full font-medium border border-blue-100">Kurikulum Merdeka & K13</span>
+                        <span class="px-3 py-1 bg-blue-50 text-blue-700 text-sm rounded-full font-medium border border-blue-100">Persiapan UTBK-SNBT</span>
+                        <span class="px-3 py-1 bg-blue-50 text-blue-700 text-sm rounded-full font-medium border border-blue-100">Desain Asesmen</span>
+                        <span class="px-3 py-1 bg-blue-50 text-blue-700 text-sm rounded-full font-medium border border-blue-100">Pengajaran Jarak Jauh</span>
+                        <span class="px-3 py-1 bg-blue-50 text-blue-700 text-sm rounded-full font-medium border border-blue-100">Teknologi Pendidikan</span>
+                        <span class="px-3 py-1 bg-blue-50 text-blue-700 text-sm rounded-full font-medium border border-blue-100">Pembuatan Sumber Belajar</span>
+                    </div>
+                </section>
+
+                <!-- Teknologi Pendukung -->
+                <section class="page-break">
+                    <h3 class="text-xl font-bold text-slate-900 border-b-2 border-blue-100 pb-2 mb-4 flex items-center gap-2">
+                        <i class="fas fa-laptop-code text-blue-600"></i> Teknologi Pendukung
+                    </h3>
+                    <div class="flex flex-col gap-3">
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded bg-slate-100 flex items-center justify-center text-slate-600"><i class="fas fa-robot"></i></div>
+                            <div class="text-sm font-medium text-slate-700">Generative AI (Gemini, ChatGPT)</div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded bg-slate-100 flex items-center justify-center text-slate-600"><i class="fab fa-microsoft"></i></div>
+                            <div class="text-sm font-medium text-slate-700">Microsoft Office Suite</div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded bg-slate-100 flex items-center justify-center text-slate-600"><i class="fab fa-google"></i></div>
+                            <div class="text-sm font-medium text-slate-700">Google Workspace</div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded bg-slate-100 flex items-center justify-center text-slate-600"><i class="fas fa-video"></i></div>
+                            <div class="text-sm font-medium text-slate-700">Zoom / Virtual Meetings</div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center mt-12 text-slate-500 text-sm no-print pb-8">
+        Professional Resume - Maulana Haidar Ma'shuum.
+    </footer>
+
+</body>
+</html>
